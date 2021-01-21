@@ -1,0 +1,22 @@
+[tool.poetry]
+name = 'prime_numbers'
+version = '0.1.0'
+description = 'A Python template project layout.'
+authors = ["Florian Salihovic <tigerarcades@gmail.com>"]
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
